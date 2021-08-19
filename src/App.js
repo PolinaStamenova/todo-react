@@ -1,3 +1,5 @@
+/* eslint-disable max-classes-per-file, no-unused-vars, quotes, comma-dangle */
+
 import "./App.css";
 import TodoContainer from "./components/TodoContainer";
 
@@ -8,12 +10,6 @@ function App() {
         <p>
           <TodoContainer />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
       </header>
     </div>
   );

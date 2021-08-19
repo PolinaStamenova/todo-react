@@ -1,18 +1,12 @@
-// import React, { useState } from "react";
+/* eslint-disable state-in-constructor, destructuring-assignmen,  prop-types */
 
-// const InputTodo = () => {
-//   console.log(useState("hello"));
-//   return <div></div>;
-// };
-
-// export default InputTodo;
-
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class InputTodo extends Component {
   state = {
-    title: "",
+    title: '',
   };
+
   onChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -23,7 +17,7 @@ class InputTodo extends Component {
     e.preventDefault();
     this.props.addTodoProps(this.state.title);
     this.setState({
-      title: "",
+      title: '',
     });
   };
 
